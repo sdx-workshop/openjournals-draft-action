@@ -1,5 +1,5 @@
-name: Open Journals PDF Generator
-description: Create a draft PDF for an Open Journals paper
+name: MDX PDF Generator
+description: Create a draft PDF for an MDX paper
 inputs:
   journal:
     description: Target journal, must be either "joss" or "jose"
@@ -13,7 +13,7 @@ inputs:
     default: 'paper.md'
 runs:
   using: docker
-  image: 'docker://openjournals/paperdraft:latest'
+  image: 'docker://faroit/whedon:latest'
   env:
     GIT_SHA: $GITHUB_SHA
     JOURNAL: ${{ inputs.journal }}
