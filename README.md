@@ -19,9 +19,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build draft PDF
-        uses: openjournals/openjournals-draft-action@master
+        uses: faroit/openjournals-draft-action@master
         with:
-          journal: joss
+          journal: mdx
           # This should be the path to the paper within your repo.
           paper-path: paper.md
       - name: Upload
