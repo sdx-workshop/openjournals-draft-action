@@ -21,4 +21,4 @@ runs:
     - ${{ inputs.paper-path }}
 branding:
   icon: file-text
-  color: blue
+  color: orange
