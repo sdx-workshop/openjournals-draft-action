@@ -19,6 +19,7 @@ runs:
     JOURNAL: ${{ inputs.journal }}
   args:
     - -o pdf
+    - -p
     - ${{ inputs.paper-path }}
 branding:
   icon: file-text
